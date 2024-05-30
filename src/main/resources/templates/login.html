@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page de Connexion et Inscription</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-md-6 offset-md-3">
+                <ul class="nav nav-tabs" id="authTab" role="tablist">
+                    <li class="nav-item">
+                        <a class="nav-link active" id="login-tab" data-toggle="tab" href="#login" role="tab" aria-controls="login" aria-selected="true">Connexion</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="register-tab" data-toggle="tab" href="#register" role="tab" aria-controls="register" aria-selected="false">Inscription</a>
+                    </li>
+                </ul>
+                <div class="tab-content" id="authTabContent">
+                    <div class="tab-pane fade show active" id="login" role="tabpanel" aria-labelledby="login-tab">
+                        <form class="mt-4" action="/utilisateur" method="post">
+                            <div class="form-group">
+                                <label for="loginEmail">Email</label>
+                                <input type="email" class="form-control" id="loginEmail" name="email" placeholder="Entrer votre email">
+                            </div>
+                            <div class="form-group">
+                                <label for="loginPassword">Mot de passe</label>
+                                <input type="password" class="form-control" id="loginPassword" name="mdp" placeholder="Entrer votre mot de passe">
+                            </div>
+                            <button type="submit" class="btn btn-primary">Connexion</button>
+                        </form>
+                    </div>
+                    <div class="tab-pane fade" id="register" role="tabpanel" aria-labelledby="register-tab">
+                        <form class="mt-4" action="/utilisateur" method="post">
+                            <div class="form-group">
+                                <label for="registerNom">Nom</label>
+                                <input type="text" class="form-control" id="registerNom" name="nom" placeholder="Entrer votre nom">
+                            </div>
+                            <div class="form-group">
+                                <label for="registerPrenom">Prénom</label>
+                                <input type="text" class="form-control" id="registerPrenom" name="prenom" placeholder="Entrer votre prénom">
+                            </div>
+                            <div class="form-group">
+                                <label for="registerPhone">Téléphone</label>
+                                <input type="text" class="form-control" id="registerPhone" name="phone" placeholder="Entrer votre téléphone">
+                            </div>
+                            <div class="form-group">
+                                <label for="registerEmail">Email</label>
+                                <input type="email" class="form-control" id="registerEmail" name="email" placeholder="Entrer votre email">
+                            </div>
+                            <div class="form-group">
+                                <label for="registerCin">CIN</label>
+                                <input type="text" class="form-control" id="registerCin" name="cin" placeholder="Entrer votre CIN">
+                            </div>
+                            <div class="form-group">
+                                <label for="registerDateNais">Date de Naissance</label>
+                                <input type="date" class="form-control" id="registerDateNais" name="dateNais">
+                            </div>
+                            <div class="form-group">
+                                <label for="registerPassword">Mot de passe</label>
+                                <input type="password" class="form-control" id="registerPassword" name="mdp" placeholder="Entrer votre mot de passe">
+                            </div>
+                            <button type="submit" class="btn btn-primary">Inscription</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
