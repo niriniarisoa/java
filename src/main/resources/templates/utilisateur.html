@@ -25,18 +25,38 @@
             </ul>
         </div>
     </nav>
-    <div class="container-fluid mt-5 pt-5"> <!-- Utilisation de container-fluid pour remplir la largeur -->
-        <div class="col-md-3">
-            <div class="sidebar">
-                <ul class="list-group">
-                    <li class="list-group-item"><a href="index"><i class="fa fa-home"></i> Accueil</a></li>
-                    <li class="list-group-item"><a href="utilisateur"><i class="fa fa-user"></i> Utilisateur</a></li>
-                    <li class="list-group-item"><a href="factures"><i class="fa fa-file"></i> Factures</a></li>
-                    <li class="list-group-item"><a href="taches"><i class="fa fa-tasks"></i> Tâches</a></li>
-                    <li class="list-group-item"><a href="paiement"><i class="fa fa-credit-card"></i> Paiements</a></li>
-                    <li class="list-group-item"><a href="planification"><i class="fa fa-calendar"></i> Planification</a></li>
-                </ul>
-                                  
+    <div class="container-fluid mt-5 pt-5">
+        <div class="row">
+            <div class="col-md-3">
+                <div class="sidebar">
+                    <ul class="list-group">
+                        <li class="list-group-item"><a href="index"><i class="fa fa-home"></i> Accueil</a></li>
+                        <li class="list-group-item"><a href="utilisateur"><i class="fa fa-user"></i> Utilisateur</a></li>
+                        <li class="list-group-item"><a href="factures"><i class="fa fa-file"></i> Factures</a></li>
+                        <li class="list-group-item"><a href="taches"><i class="fa fa-tasks"></i> Tâches</a></li>
+                        <li class="list-group-item"><a href="paiement"><i class="fa fa-credit-card"></i> Paiements</a></li>
+                        <li class="list-group-item"><a href="planification"><i class="fa fa-calendar"></i> Planification</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-9">
+                <h2>Liste des Utilisateurs</h2>
+                <table class="table table-striped">
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Nom</th>
+                            <th>Prénom</th>
+                            <th>Téléphone</th>
+                            <th>Email</th>
+                            <th>CIN</th>
+                            <th>Date de Naissance</th>
+                        </tr>
+                    </thead>
+                    <tbody id="utilisateurTableBody">
+                        <!-- Les données des utilisateurs seront insérées ici par JavaScript -->
+                    </tbody>
+                </table>
             </div>
         </div>
     </div>
